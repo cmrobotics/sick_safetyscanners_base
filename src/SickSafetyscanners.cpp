@@ -244,14 +244,7 @@ AsyncSickSafetyScanner::AsyncSickSafetyScanner(sick::types::ip_address_t sensor_
   , m_work(sick::make_unique<boost::asio::io_service::work>(m_io_service))
 {
   m_service_thread = boost::thread([this] {
-    try
-    {
-      m_io_service.run();
-    }
-    catch (const std::exception& e)
-    {
-      LOG_ERROR("%s", e.what());
-    }
+    m_io_service.run();
   });
 }
 
@@ -265,14 +258,7 @@ AsyncSickSafetyScanner::AsyncSickSafetyScanner(sick::types::ip_address_t sensor_
   , m_work(sick::make_unique<boost::asio::io_service::work>(m_io_service))
 {
   m_service_thread = boost::thread([this] {
-    try
-    {
-      m_io_service.run();
-    }
-    catch (const std::exception& e)
-    {
-      LOG_ERROR("%s", e.what());
-    }
+    m_io_service.run();
   });
 }
 
