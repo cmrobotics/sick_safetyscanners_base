@@ -2,8 +2,8 @@
 Changelog for package sick_safetyscanners_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2024-06-04)
+------------------
 * Merge pull request `#1 <https://github.com/cmrobotics/sick_safetyscanners_base/issues/1>`_ from cmrobotics/dont-catch-boost-thread-exceptions
   SS-947 Propagate exceptions from io thread up to main thread
 * propagate exceptions from io thread up to main thread
